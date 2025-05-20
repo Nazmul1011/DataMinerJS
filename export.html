@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ML Pipeline - Export</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo"><a href="index.html">ML Pipeline</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dataset</a></li>
+        <li><a href="preview.html">Preview</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+        <li><a href="modeling.html">Modeling</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="visualizations.html">Visualizations</a></li>
+        <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div id="app">
+    <section id="exportSection">
+      <h2>Export Results</h2>
+      <p class="description">Download your report or model, or reset to start a new pipeline.</p>
+
+      <div class="card" style="text-align:center;">
+        <button id="downloadReportBtn">📄 Download Report (PDF)</button>
+        <button id="downloadModelBtn">💾 Export Model (.pkl)</button>
+        <button id="resetBtn">🔄 Start Over</button>
+
+        <div id="exportMsg" style="margin-top: 1rem; font-weight: 600; color: green;"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/export.js"></script>
+</body>
+</html>

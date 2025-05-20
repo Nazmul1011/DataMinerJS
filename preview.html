@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ML Pipeline - Preview Dataset</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo"><a href="index.html">ML Pipeline</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dataset</a></li>
+        <li><a href="preview.html">Preview</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+        <li><a href="modeling.html">Modeling</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="visualizations.html">Visualizations</a></li>
+        <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div id="app">
+    <section id="previewSection">
+      <h2>Dataset Preview</h2>
+      <p class="description">Here is a quick preview and analysis of your uploaded dataset.</p>
+
+      <div class="card">
+        <div class="meta-item">📊 Rows: <span id="metaRows">-</span></div>
+        <div class="meta-item">🔢 Columns: <span id="metaColumns">-</span></div>
+        <div class="meta-item">❓ Missing Values: <span id="metaNulls">-</span></div>
+        <div class="meta-item">🧪 Column Types:</div>
+        <ul id="metaColTypes" style="margin-left: 1.25rem; color:#555; font-size:0.9rem;"></ul>
+      </div>
+
+      <div class="card" style="overflow-x:auto; margin-top: 1.5rem;">
+        <table id="datasetTable">
+          <thead><tr></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/preview.js"></script>
+</body>
+</html>

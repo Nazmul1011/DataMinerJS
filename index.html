@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ML Pipeline - Upload Dataset</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Navbar -->
+  <header>
+    <div class="logo"><a href="index.html">ML Pipeline</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dataset</a></li>
+        <li><a href="preview.html">Preview</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+        <li><a href="modeling.html">Modeling</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="visualizations.html">Visualizations</a></li>
+        <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Upload Section -->
+  <div id="app">
+    <section id="uploadSection">
+      <h2>Upload Dataset</h2>
+      <p class="description">Accepted formats: CSV or TSV. Drag & drop or pick a file.</p>
+      <div id="uploadBox">Drag & drop or click to select</div>
+      <input type="file" id="fileInput" accept=".csv,.tsv" style="display:none;" />
+      <div id="uploadedFileName"></div>
+      <button id="uploadBtn" disabled>Upload</button>
+      <br><br>
+      <a href="preview.html" id="toPreviewLink" style="display:none;">Go to Preview →</a>
+    </section>
+  </div>
+
+  <script src="js/upload.js"></script>
+
+  
+</body>
+</html>

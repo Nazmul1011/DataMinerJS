@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ML Pipeline - Results</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo"><a href="index.html">ML Pipeline</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dataset</a></li>
+        <li><a href="preview.html">Preview</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+        <li><a href="modeling.html">Modeling</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="visualizations.html">Visualizations</a></li>
+        <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div id="app">
+    <section id="resultsSection">
+      <h2>Training Results</h2>
+      <p class="description">Here are the simulated evaluation metrics for your trained model.</p>
+
+      <div class="card" id="metricsCard">
+        <p><strong>Accuracy:</strong> <span id="accuracyVal">-</span></p>
+        <p><strong>Precision:</strong> <span id="precisionVal">-</span></p>
+        <p><strong>Recall:</strong> <span id="recallVal">-</span></p>
+        <p><strong>F1-Score:</strong> <span id="f1Val">-</span></p>
+      </div>
+
+      <div class="card" style="margin-top: 2rem;">
+        <h3 style="margin-top:0;">Confusion Matrix</h3>
+        <table id="confusionMatrix" style="text-align:center;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Predicted: Yes</th>
+              <th>Predicted: No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Actual: Yes</th>
+              <td id="tp">-</td>
+              <td id="fn">-</td>
+            </tr>
+            <tr>
+              <th>Actual: No</th>
+              <td id="fp">-</td>
+              <td id="tn">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/results.js"></script>
+</body>
+</html>
